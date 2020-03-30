@@ -1,0 +1,16 @@
+.data{
+	font-style: absolute;
+	background-color: light-blue;
+	font-size: 30px;
+	color: green;
+}
+.data tr td{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: orange;
+}
+.header{
+	font-size: 20px;
+	color: red;
+}

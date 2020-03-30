@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 0;
+    /*background-image: url("wi2.jpg");*/
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body::after {
+    content: "";
+    background: url("wi2.jpg");
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+h1{
+    color:white;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.workshop-form {
+    width: 660px;
+    height: 600px;
+    margin: 60px auto 0;
+    margin-bottom: 60px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: orange;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,1);
+}
+
+.form-header {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #e1e8ee; 
+}
+
+.form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+}
+
+.form-title{
+    font-size: 30px;
+    margin: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+    color: #525252;
+    font-weight: 600;
+}
+
+label, .profinfo p {
+    font-size: 16px;
+  color: #555;
+  text-transform: capitalize;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.names,
+.emailinfo,
+.mobileinfo,
+.profinfo,
+.submitbutton{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 16px;
+    color: #86939e;
+}
+
+.fnames,.lnames{
+    float: left;
+    width: 282px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border: 1px none;
+}
+
+input[type=text],input[type=email],input[type=number] {
+    width: 90%;
+    padding: 15px;
+    margin-left: 0px;
+    margin: 5px;
+    box-sizing: border-box;  
+}
+.emailinfo,.mobileinfo {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border: 1px none;
+}
+
+.profinfo {
+    display: inline-block;
+    position: relative;
+}
+
+.profinfo label {
+    display: inline;
+    font-weight: lighter;
+    margin-top: 8px;
+}
+
+
+
+button {
+    color: #fff;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    background: #4272d7;
+}
+
+button: hover {
+    background: #4dae3c;
+}

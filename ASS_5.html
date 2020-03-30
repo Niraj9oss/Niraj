@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Workshop Form
+    </title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="ASS_5.css">
+
+    </head>
+
+<body>
+    <header>
+        <h1>National Workshop on Web Technology</h1>
+    </header>
+    <form class="workshop-form" id="workshop-form">
+        <div class="form-head">
+            <h3 class="form-title">
+                Registration Form
+            </h3>
+        </div>
+    <div class="form-body">
+        <div class="names">
+           <div class="fnames"> 
+            <label>
+               First Name
+           </label>
+           <input type="text" placeholder="First Name" id="fname"></div>
+            <div class="lnames">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name" id="lname"></div>
+        </div>
+        <div class="emailinfo"> 
+            <label>E-mail</label>
+            <input type="email" placeholder="E-mail" id="email">
+        </div>
+        <div class="mobileinfo">
+            <label>Contact No</label>
+            <input type="number" placeholder="Mobile Number" id="mno">
+        </div>
+        <div class="profinfo">
+            <p>Proffession</p><br>
+            <input type="radio" id="Proffession" name="student" value="student">
+            <label for="student">Student</label><br>
+            <input type="radio" name="Faculty" id="Proffession" value="faculty">
+            <label for="faculty">Faculty</label><br>
+            <input type="radio" name="proffessional" id="Proffession" value="proffessional">
+            <label for="proffessional">Proffessional</label><br>
+            <input type="radio" name="companyrepresentative" id="Proffession" value="cr">
+            <label for="cr">Company Representative</label><br><br>
+        </div>
+        <div class="submitbutton">
+            <button type="submit" id="submit" value="submit" onsubmit="getdata()">Submit</button>
+        </div>
+    </div>
+</form>
+
+<<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB7hYy56VZoJdNsj4qD43AawKTxxLVCtU4",
+    authDomain: "wt-workshop.firebaseapp.com",
+    databaseURL: "https://wt-workshop.firebaseio.com",
+    projectId: "wt-workshop",
+    storageBucket: "wt-workshop.appspot.com",
+    messagingSenderId: "667987786256",
+    appId: "1:667987786256:web:127cc56b4394c6047b6895",
+    measurementId: "G-FCN5DY9TKR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script>
+
+    var databaseRef = firebase.database().ref().child("WorkshopForm");
+    document.getElementById("workshop-form").addEventListener("submit", submitForm);
+
+   /* function submitForm(e) {
+        e.preventDefault();
+        var firstname = document.getElementById("fname").value;
+            var lasttname = document.getElementById("lname").value;
+            var contactno = document.getElementById("mno").value;
+            var emailid = document.getElementById("email").value;
+        saveForm(firstname, lastname, contactno, emailid);
+        document.getElementById().reset();
+    }
+    function saveForm(firstname, lastname, contactno, emailid) {
+        var newDataRef = databaseRef.push();
+        newDataRef.set({
+             firstname: firstname,
+             lastname: lastname,
+             contactno: contactno,
+             emailid: emailid
+        });
+        window.alert("Registered successfully!!!")
+    }
+*/
+
+    function getdata(){
+        Firebase.database().ref("Users/").set({
+
+            var firstname = document.getElementById("fname").value;
+            var lasttname = document.getElementById("lname").value;
+            var contactno = document.getElementById("mno").value;
+            var emailid = document.getElementById("email").value;
+
+            var newDataRef = databaseRef.push();
+
+            newDataRef.set({
+
+             firstname: firstname,
+             lastname: lastname,
+             contactno: contactno,
+             emailid: emailid
+        });
+            window.alert("user is registered successfully!!");
+        });
+    }
+
+    /*var rootRef = firebase.database().ref().child('Users');
+    $('#submit').getdata(function() {
+        rootRef.set({
+            firstname: $('#fname').val();
+            lastname: $('#lname').val();
+            emailid: $('#mno').val();
+            contactno: $('#email').val();
+        });
+    });
+    alert("Registered successfully!!!");*/
+
+
+</script>
+
+</body>
+
+</html> 

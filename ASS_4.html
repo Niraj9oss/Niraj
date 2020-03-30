@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+		<div class="info" style="color: blue; font-size: 20px;">
+		<form action="/file not found">
+            First name: <input type="text" id="fname" onblur="myFunction()"><br><br>
+  			<label for="lname">Last name:</label><br>
+  			<input type="text" id="lname" name="lname"><br><br>
+  		    <label for="username">Username:</label><br>
+  			<input type="text" id="username" name="username"><br><br>
+  			<label for="pwd">Password:</label><br>
+  			<input type="password" id="pwd" name="pwd"><br><br>
+  			<label for="number">Mobile No</label></br>
+  			<input type="number" id="Mobile no" name="Mobile no"><br><br>
+			<button class="button">Reset</button>
+			<button class="button button2">Submit</button>
+		</form>
+		</div>
+<script>
+  function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+  }
+  
+</script>
+</body>
+</html>
