@@ -1,0 +1,75 @@
+.logo{
+	background-color: black;
+}
+
+.Home h4{
+	background:url("a41.webp") center no-repeat;
+	height: 280px;
+	width: 1540px; 
+	color: yellow;
+	background-size: cover;
+	border-image-width: 100px;
+}
+
+ul li{
+	float: right;
+	background-color: lightyellow;
+	color: brown;
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 20px;
+	text-align: center;
+	list-style: none;
+	border: 2px solid black;
+}
+ul li ul{
+	display: none;
+}
+ul li:hover > ul{
+   display: block;
+}
+ul li:hover{
+	background-color: #FF8000;
+}
+.wrapper{
+	background-color: #8D9393;
+}
+.lessons{
+	margin-top: 7%;
+	margin-left: 22%;
+	height: 395px;
+	
+}
+.lesson
+{
+    float: left;
+    background-color: #8D9393;
+    width: 25%;
+}
+
+.hexagon
+{
+    position: relative;
+}
+
+.hexagon p
+{
+    position: absolute;
+    top: 24%;
+    right: 18%;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    color: black;
+}
+
+.text-contents
+{
+    font-size:22px;
+    font-style: initial;
+	display: block;
+	width: 77%;
+    margin-top: 15px;
+	color: #3D4040;
+}

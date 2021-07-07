@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Personal Details </title>
+	<link rel="stylesheet" type="text/css" href="fg2.css">
+
+  <style type="text/css">
+     
+      .com{
+        height: 1875px;
+        width: 1390px;
+        margin-left: 366px;
+        margin-top: -1385px;
+        border: 2px solid black;
+        box-shadow:  5px 10px black;
+        opacity: 5;
+        background-color: #ffcc66; 
+
+      }
+      table{
+            width:1159px;
+          }
+    .uni{
+          margin-left: 174px;
+          margin-top: -121px;
+        }
+      .add{
+          margin-left: 174px; 
+        font-size: 20px;
+        }
+    .img{
+            width: 120px; 
+        margin-left: 36px; 
+        margin-top: 20px; 
+          }
+    .addform{ 
+              font-size: 35px; 
+          text-align: center; 
+          margin-top: 60px; 
+          border-style: solid; 
+          border-width: 2px; 
+          font-style: oblique;
+          background-color:  #00ccff;
+            }
+    .p{
+        font-size: 25px; 
+      margin-left: 32px;
+      }
+    .body{
+              width: 100%;
+              padding: 0px;
+              height: 100%;
+             }
+        .header{
+                 background-color:   #b37700;
+                 height: 160px;
+               }
+        .left{
+              padding-top: 260px;
+              background-color: lightblue;
+              width: 340px;
+              height: 1070px; 
+             }
+        .leftin{
+               font-size: 20px;
+               width: 100px;
+               height: 1000px;
+                 margin-top: 90px;
+                 margin-left: 59px;
+               }
+        .leftin h5{
+                    width: 180px;
+                  margin-left: 40px;
+                  }
+        .leftin img{
+                   width: 120px;
+                   align-items: left;
+                   margin-top: 60px;
+                   margin-left: 57px;
+                   background-color: 
+                   }
+        .button{
+             font-size: 38px;
+             display: inline-block; 
+             padding: 12px 24px;  
+             opacity: 2;
+             border: 2px solid black; 
+             border-radius: 4px; 
+             box-shadow: 5px 10px black; 
+             text-align: center;
+             border-color: black;
+
+             
+               }
+      .button1{
+          font-size: 38px; 
+          display: inline-block; 
+          padding: 12px 24px;  
+          opacity: 5;
+          border: 2px solid black; 
+          border-radius: 4px; 
+          box-shadow: 6px 12px black; 
+          text-align: center;
+          border-color: black;  
+       
+         }
+
+      .header1{
+         background-color: black;
+         color: white;
+  </style>
+</head>
+<body>
+
+  <form action="fp2.php" method="POST" enctype="multipart/from-data">
+
+    <div class="header1">
+      <h3 style="font-size: 30px; text-align: center;"> I hope you read carefully all the information of Home page before fill up the below Details. </h3>
+
+      <hr>
+    </div>
+    
+    <div class="left">
+    <div class="leftin">
+      <h2> REGISTRATION <br> <h5> FORM TEMPLATE </h5></h2>
+      <img src="file.jpg">
+    </div>
+    </div>
+   
+    <img src="pen.jpg" style="width: 130px; height: 1000px; margin-left: 1810px; margin-top: -950px;"> 
+
+  <div class="com"> 
+      <div class="header">
+        <img src="cha-logo.jpg" class="img">
+        <h1 class="uni"> CHARUSAT UNIVERSITY </h1>
+        <h5 class="add"> At:Changa, Anand, Gujarat</h5>
+      </div>
+
+        <h1 class="addform"> ADDMISSION FORM </h1>
+        <h4 class="p"> Please fill up the form in English Capital Letters only. </h4>
+      
+
+    <div class="main">
+        
+        <table>
+          <tr>
+            <td style="font-size: 20px;"> STUDENT NAME : <br><br></td>
+            <td><input type="text" name="name" maxlength="30" placeholder="Fname + Mname + Lname" id="sid"></td>
+          </tr>
+      <tr>
+            <td style="font-size: 20px;"> BIRTH DATE : <br><br></td>
+            <td>
+                    <select name="Birth_day" id="Birthday_Day">
+          <option value="-1">Day:</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+           
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+           
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+           
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+           
+          <option value="31">31</option>
+          </select>
+           
+          <select id="Birthday_Month" name="Birth_month">
+          <option value="-1">Month:</option>
+          <option value="January">Jan</option>
+          <option value="February">Feb</option>
+          <option value="March">Mar</option>
+          <option value="April">Apr</option>
+          <option value="May">May</option>
+          <option value="June">Jun</option>
+          <option value="July">Jul</option>
+          <option value="August">Aug</option>
+          <option value="September">Sep</option>
+          <option value="October">Oct</option>
+          <option value="November">Nov</option>
+          <option value="December">Dec</option>
+          </select>
+           
+          <select name="Birth_year" id="Birthday_Year">
+           
+          <option value="-1">Year:</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+           
+          <option value="1999">1999</option>
+          <option value="1998">1998</option>
+          <option value="1997">1997</option>
+          <option value="1996">1996</option>
+          <option value="1995">1995</option>
+          <option value="1994">1994</option>
+          <option value="1993">1993</option>
+          <option value="1992">1992</option>
+          <option value="1991">1991</option>
+          <option value="1990">1990</option>
+           </select>
+                 <b>Select Day,Month & Year...</b> 
+
+      </tr>
+
+      <tr>
+         <td style="font-size: 20px;">EMAIL-ID : <br><br></td>  
+         <td><input type="text" name="Emailid" maxlength="50" text="1" placeholder="abc123@gmail.com" id="eid"></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> GENDER : <br><br></td>
+        <td>MALE<input type="radio" name="gender" value="M"></td>
+        <td>FEMALE<input type="radio" name="gender" value="F"></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> MOBILE NO : <br><br></td>
+        <td><input type="number" name="mobile_no" value="number" placeholder="10 digit only" ><b>Contact Number must be 10 Digits...</b></td>
+
+      </tr>
+            <tr>
+        <td style="font-size: 20px;"> AADHAR NO : <br><br></td>
+        <td><input type="number" name="aadhar_no" value="number" placeholder="12 digit only"><b>Aadhar Number must be 12 Digits...</b></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> BLOOD GROUP : <br><br></td>
+        <td><input type="text" name="bloodgroup" id="bid"></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> CURRENT ADDRESS : <br><br></td>
+        <td><textarea name="curr_address" rows="7" cols="35" id="cid"></textarea></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> PERMANENT ADDRESS : <br><br></td>
+        <td><textarea name="per_address" rows="7" cols="35" id="pid"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> CITY : <br><br></td>
+        <td><input type="text" name="city" id="cityid"></td>
+
+        <td style="font-size: 20px;"> PINCODE : </td>
+        <td><input type="number" name="pincode" id="pinid"></td>
+
+        <td style="font-size: 20px;"> STATE : </td>
+        <td><input type="text" name="state" id="stid"></td>
+      </tr>
+         </table> 
+
+        <h5 style="font-style: bold; font-size: 28px; border-style: solid;border-width: 2px; border-color: black; background-color:  #00ccff;"> EDUCATION DETAILS : </h5>
+      
+      <table>
+        
+        <tr>
+          <td style="font-size: 20px;"> 10th %tage : <br/><br/></td>
+          <td><input type="number" name="tenth_tage" id="tid"></td>
+
+          <td style="font-size: 20px;"> 10th SCHOOL NAME : </td>
+          <td><input type="text" name="tenth_school" id="tsid"></td>
+        </tr>
+
+        <tr>
+          <td style="font-size: 20px;"> 12th %tage : <br/><br/></td>
+          <td><input type="number" name="tweth_tage" id="twid"></td>
+
+          <td style="font-size: 20px;"> 12th %tile : </td>
+          <td><input type="number" name="tweth_tile" id="ttid"></td>
+
+          <td style="font-size: 20px;"> 12th SCHOOL NAME :</td>
+          <td><input type="text" name="tweth_school" id="twsid"></td>
+         
+        </tr>
+
+        <tr>
+          <td style="font-size: 20px;"> GUJ-CET (OUT OF 120) :<br><br></td>
+          <td><input type="number" name="GUJCET" id="gid"></td>
+
+          <td style="font-size: 20px;"> GUJ-CET (%tile) :<br><br></td>
+          <td><input type="number" name="GUJCET_tile" id="gtid"></td>
+        </tr>
+
+      </table>
+
+             <h5 style="font-style: bold; font-size: 28px; border-style: solid;border-width: 2px; border-color: black; background-color:  #00ccff;"> OTHERS DETAILS : </h5>
+    <table>
+
+          <tr>
+        <td style="font-size: 20px;"> FATHER NAME : <br><br></td>
+        <td><input type="text" name="father_name" id="fid"></td>
+
+        <td style="font-size: 20px;"> FATHER'S EDUCATION : <br></td>
+        <td><input type="text" name="father_education" id="feid"></td>
+
+        <td style="font-size: 20px;"> FATHER'S OCCUPATION : </td>
+        <td><input type="text" name="father_occupation" id="foid"></td>
+
+        <td style="font-size: 20px;"> FATHER'S MOBILE : <br><br></td>
+        <td><input type="number" name="father_mobileno" id="fid"></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> MOTHER NAME : <br><br></td>
+        <td><input type="text" name="mother_name" id="mid"></td>
+
+        <td style="font-size: 20px;"> MOTHER'S EDUCATION : <br></td>
+        <td><input type="text" name="mother_education" id="meid"></td>
+
+        <td style="font-size: 20px;"> MOTHER'S OCCUPATION : </td>
+        <td><input type="text" name="mother_occupation" id="moid"></td>
+
+        <td style="font-size: 20px;"> MOTHER'S MOBILE : <br><br></td>
+        <td><input type="number" name="mother_mobileno" id="fid"></td>
+      </tr>
+
+      <tr>
+        <td style="font-size: 20px;"> YEARLY FAMILY INCOME : <br><br></td>
+        <td><input type="number" name="yeary_family_income" id="yid"></td>
+      </tr>
+    </table>
+      <br>
+
+      <center>
+        <div class="button">
+      <input type="Submit" name="sub" value="Submit" onclick="validate()" style="font-size: 24px;">
+      </div>
+      
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <div class="button1">
+      <input type="reset" name="res" value="Cancel" style="font-size: 24px;">
+      </div>
+      </center>
+      </table>
+    </div>
+  </div>
+
+
+     <div class="right">
+       
+     </div>
+
+  </form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+  function validate()
+  {
+    if(document.getElementById("sid").value=="")
+    {
+      alert("Please Enter Student Name...");
+    }
+    if(document.getElementById("eid").value=="")
+    {
+      alert("Please Enter Your Email ID...");
+    }
+    if(document.getElementById("bid").value=="")
+    {
+      alert("Please Enter Your Blood Group...");
+    }
+    if(document.getElementById("cid").value=="")
+    {
+      alert("Please Enter Your Current address...");
+    }
+    if(document.getElementById("pid").value=="")
+    {
+      alert("Please Enter Your Permanent address...");
+    }
+    if(document.getElementById("cityid").value=="")
+    {
+      alert("Please Enter Your City...");
+    }
+    if(document.getElementById("pinid").value=="")
+    {
+      alert("Please Enter Your Pincode...");
+    }
+    if(document.getElementById("stid").value=="")
+    {
+      alert("Please Enter Your State...");
+    }
+    if(document.getElementById("tid").value=="")
+    {
+      alert("Please Enter Your 10th Standard Percentage...");
+    }
+    if(document.getElementById("tsid").value=="")
+    {
+      alert("Please Enter Your 10th Standard School...");
+    }
+    if(document.getElementById("twid").value=="")
+    {
+      alert("Please Enter Your 12th Standard Percentage...");
+    }
+    if(document.getElementById("ttid").value=="")
+    {
+      alert("Please Enter Your 12th Standard Persentile...");
+    }
+    if(document.getElementById("twsid").value=="")
+    {
+      alert("Please Enter Your 12th Standard School...");
+    }
+    if(document.getElementById("gid").value=="")
+    {
+      alert("Please Enter Your GUJ-CET Marks...");
+    }
+    if(document.getElementById("gtid").value=="")
+    {
+      alert("Please Enter Your GUJ-CET Persentile...");
+    }
+    if(document.getElementById("fid").value=="")
+    {
+      alert("Please Enter Your Father Name...");
+    }
+    if(document.getElementById("feid").value=="")
+    {
+      alert("Please Enter Your Father Education...");
+    }
+    if(document.getElementById("foid").value=="")
+    {
+      alert("Please Enter Your Father Occupation...");
+    }
+    if(document.getElementById("mid").value=="")
+    {
+      alert("Please Enter Your Mother Name...");
+    }
+    if(document.getElementById("meid").value=="")
+    {
+      alert("Please Enter Your Mother Education...");
+    }
+    if(document.getElementById("moid").value=="")
+    {
+      alert("Please Enter Your Mother Occupation...");
+    }
+    if(document.getElementById("yid").value=="")
+    {
+      alert("Please Enter Your Yearly Family Income...");
+    }
+    }
+</script>

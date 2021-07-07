@@ -1,0 +1,34 @@
+.body{
+	width: 200px;
+	padding: 0px;
+	height: 200px;
+}
+.header1 {
+	background-color: black;
+	color: white;
+}
+.left{
+	padding: 0px;
+	background-color: lightgreen;
+	width: 380px;
+	height: 1600px; 
+}
+.leftin{
+	font-size: 20px;
+	width: 150px;
+	height: 1200px;
+    margin-top: 90px;
+    margin-left: 69px;
+}
+.leftin h5{
+    width: 180px;
+	margin-left: 40px;
+}
+.leftin img{
+	width: 120px;
+	align-items: left;
+	margin-top: 60px;
+	margin-left: 57px;
+	background-color: 
+}
+
